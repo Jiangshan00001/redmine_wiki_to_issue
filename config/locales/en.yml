@@ -1,0 +1,9 @@
+# English strings go here for Rails i18n
+en:
+  # my_label: "My label"
+  label_project_id: "project id"
+  label_wiki_id: "wiki id"
+  label_wiki_page: "wiki page"
+  label_issue_generated_count: "issue generated count"
+  label_root_issue: "root issue"
+

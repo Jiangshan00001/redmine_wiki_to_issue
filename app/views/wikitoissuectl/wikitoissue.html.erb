@@ -1,0 +1,10 @@
+<h2>WikitoissuectlController#wikitoissue</h2>
+<p>
+  <%= l(:label_project_id) %> <%= @project_id%>
+</p>
+<p>
+  <%= l(:label_wiki_id) %> <%= @wiki_id%>
+</p>
+<p></p>
+<%= l(:label_issue_generated_count) %> <%=@issue_count%>
+<%= l(:label_root_issue) %> <a href="<%=Redmine::Utils::relative_url_root%>/issues/<%=@created_issue_id%>"><%=@created_issue_id%></a>

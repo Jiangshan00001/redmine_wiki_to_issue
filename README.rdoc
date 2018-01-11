@@ -1,0 +1,7 @@
+= redmine_wiki_to_issue
+this is a redmine plugin. it is a issue template. the template is written in wiki.
+
+  generate issue(s) from wiki(s). Examples:\n\n<pre>{{wiki_to_issue(wiki_page_name)}}\n   </pre>
+        this will create a BUTTON to create new issue: subject=wiki_page_name.title, description=wiki_page_name.content, project=wiki_page_name.project, author=current_user.
+      what's more, if wiki_page_name.content include <pre> :child_issue:[[wiki_page_name2]] </pre>, another child issue will be created.
+      this child process could be a recursion. but the recursion depth is limited to 10.
