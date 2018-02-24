@@ -29,13 +29,14 @@ EOF
     sub1=' [['+args.first.to_s+']] '
     out1 = textilizable(sub1 )
 
-    out2=link_to('create issue from wiki',
+    out2=link_to('<---create issue from wiki',
                  controller: 'wikitoissuectl', action: 'wikitoissue',
                  project_id: page.wiki.project.identifier.to_s, wiki_id: page.title.to_s)
 
     #out1= '<a href="/wikitoissuectl/wikitoissue/'+page.wiki.project.identifier.to_s+'/'+page.title.to_s+'"> ---create issue from wiki ---</a>'
     #out2= '<a href="/projects/'+page.wiki.project.identifier.to_s+'/wiki/'+page.title.to_s+'">'+ args.first.to_s + '</a>'
     out="<div style=' border: #759fcf solid 1px'> ".html_safe  + ( out1 + out2 ).html_safe + "</div>".html_safe
+    #out=( out1.lstrip + out2 ).html_safe
 
     return out
 

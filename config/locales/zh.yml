@@ -6,4 +6,5 @@ zh:
   label_wiki_page: "WIKI 页面"
   label_issue_generated_count: "生成问题数"
   label_root_issue: "父问题"
+  wiki_to_issue_title: "wiki 转为 issue"
 
